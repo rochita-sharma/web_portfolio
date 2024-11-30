@@ -1,0 +1,507 @@
+/* =============================================== /*
+/*                                                 /* 
+/*                      CSS Reset                  /*
+/*                                                 /*
+/* =============================================== */
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* =============================================== /*
+/*                     Animation                   /*
+/* =============================================== */
+/* Slide Code (Black Screen) */
+@-webkit-keyframes slide {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 0px 600px;
+  }
+}
+@-moz-keyframes slide {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 0px 600px;
+  }
+}
+@-o-keyframes slide {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 0px 600px;
+  }
+}
+@keyframes slide {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 0px 600px;
+  }
+}
+
+/* =============================================== /*
+/*                                                 /* 
+/*                      Workspace                  /*
+/*                                                 /*
+/* =============================================== */
+
+#workspace div {
+  position: absolute;
+  margin-right: 75%;
+}
+#workspace:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 18.7%;
+  bottom: 0;
+  background: #e2aabe;
+  height: 68px;
+  border-top: 9px solid #ae758a;
+}
+#workspace .desk {
+  width: 990px;
+  height: 100%;
+  margin: auto;
+  position: inherit;
+}
+
+
+/*
+/*
+/* =============================================== /*
+/*                     Table                       /*
+/* =============================================== */
+.table {
+  position: absolute;
+  bottom: 33px;
+  z-index: 1;
+  width: 498px;
+  height: 297px;
+  margin-left: 92px;
+  -moz-transition-property: margin-left;
+  -o-transition-property: margin-left;
+  -webkit-transition-property: margin-left;
+  transition-property: margin-left;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+.table:after {
+  /* position: absolute; */
+  content: '';
+  background: #ccbdac;
+  -moz-box-shadow: 0 1px 7px 0 #958A7E;
+  -webkit-box-shadow: 0 1px 7px 0 #958A7E;
+  box-shadow: 0 1px 7px 0 #958A7E;
+  height: 21px;
+  width: 50%;
+}
+.table:before {
+  /* position: absolute; */
+  content: '';
+  background: #e0ceb8;
+  height: 100%;
+  width: 31px;
+}
+.table .right-tb {
+  position: absolute;
+  right: 0;
+  width: 233px;
+  height: 274px;
+  padding: 23px 0 0 20px;
+  background: #e0ceb8;
+}
+.table .right-tb:after {
+  content: '';
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: -4px;
+  background: #CA98AB;
+  border-radius: 100%;
+  right: 1px;
+}
+.table .right-tb span {
+  position: relative;
+  padding: 2px;
+  border: 2px solid #BBAA95;
+  width: 205px;
+  height: 70px;
+  margin-top: 10px;
+  display: block;
+}
+.table .right-tb span:before {
+  content: '';
+  background: #CEBCA7;
+  position: absolute;
+  width: 205px;
+  height: 70px;
+}
+.table .right-tb span:after {
+  content: '';
+  background: #fff;
+  position: absolute;
+  width: 69px;
+  height: 15px;
+  left: 73px;
+  top: 18px;
+  -moz-border-radius: 15px 15px 0 0;
+  -webkit-border-radius: 15px;
+  border-radius: 15px 15px 0 0;
+  border-bottom: 2px solid #9b8b77;
+}
+
+
+
+/*
+/*
+/*
+/* =============================================== /*
+/*                   Black Screen                  /*
+/* =============================================== */
+.bk-screen {
+  position: absolute;
+  width: 180px;
+  height: 241px;
+  background: #343441;
+  border: 8px solid #525151;
+  right: 45px;
+  top: -296px;
+  background: url(D:\portfolio_web\client\src\static\backgroundCode.jpg);
+  background-size: 100%;
+  -webkit-animation: slide 15s linear infinite;
+  -moz-animation: slide 15s linear infinite;
+  -o-animation: slide 15s linear infinite;
+  animation: slide 15s linear infinite;
+}
+.bk-screen:before {
+  content: '';
+  position: absolute;
+  background: #343434;
+  width: 78px;
+  height: 17px;
+  bottom: -25px;
+  left: 51px;
+}
+.bk-screen:after {
+  content: '';
+  position: absolute;
+  width: 76px;
+  height: 0;
+  bottom: -38px;
+  right: 38px;
+  border-bottom: 14px solid #626262;
+  border-left: 13px solid transparent;
+  border-right: 14px solid transparent;
+}
+.bk-screen i {
+  position: absolute;
+  background: #343434;
+  width: 103px;
+  height: 9px;
+  bottom: -47px;
+  left: 39px;
+}
+
+/*
+/*
+/* =============================================== /*
+/*                     Chair                       /*
+/* =============================================== */
+.chair {
+  position: absolute;
+  width: 165px;
+  height: 436px;
+  bottom: 34px;
+  z-index: 2;
+  margin-left: -20px;
+  -moz-transition-property: margin-left;
+  -o-transition-property: margin-left;
+  -webkit-transition-property: margin-left;
+  transition-property: margin-left;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+.chair:after {
+  content: '';
+  position: absolute;
+  width: 165px;
+  height: 231px;
+  background: #3a3a3a;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.chair:before {
+  content: '';
+  position: absolute;
+  background: #7d7d7d;
+  width: 12px;
+  height: 10px;
+  left: 76px;
+  top: 231px;
+}
+.chair ul {
+  position: absolute;
+  width: 165px;
+  height: 23px;
+  background: #3a3a3a;
+  top: 240px;
+  -moz-border-radius: 0 0 15px 15px;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 15px 15px;
+}
+.chair ul:before {
+  content: '';
+  position: absolute;
+  background: #656565;
+  width: 141px;
+  height: 11px;
+  top: 23px;
+  left: 10px;
+}
+.chair ul:after {
+  content: '';
+  position: absolute;
+  background: #4b4b4b;
+  width: 37px;
+  height: 7px;
+  top: 34px;
+  left: 62px;
+}
+.chair ul li:first-child {
+  width: 18px;
+  height: 156px;
+  position: absolute;
+  left: 75px;
+  top: 41px;
+  -moz-perspective: 99px;
+  -webkit-perspective: 99px;
+  perspective: 99px;
+}
+.chair ul li:first-child:after {
+  content: '';
+  position: absolute;
+  top: 16px;
+  width: 14px;
+  height: 167px;
+  background: #4b4b4b;
+  -moz-transform: rotateX(160deg);
+  -webkit-transform: rotateX(160deg);
+  transform: rotateX(160deg);
+  outline: 1px solid transparent;
+}
+.chair ul li:nth-child(2), .chair ul li:nth-child(3) {
+  position: absolute;
+  width: 11px;
+  height: 96px;
+  top: 121px;
+  -moz-perspective: 99px;
+  -webkit-perspective: 99px;
+  perspective: 99px;
+  -moz-transform: rotate(228deg);
+  -ms-transform: rotate(228deg);
+  -webkit-transform: rotate(228deg);
+  transform: rotate(228deg);
+  left: 33px;
+}
+.chair ul li:nth-child(2):after, .chair ul li:nth-child(3):after {
+  content: '';
+  background: #4b4b4b;
+  position: absolute;
+  top: -24px;
+  width: 11px;
+  height: 123px;
+  -moz-transform: rotateX(45deg);
+  -webkit-transform: rotateX(45deg);
+  transform: rotateX(45deg);
+  outline: 1px solid transparent;
+}
+.chair ul li:nth-child(3) {
+  left: 120px;
+  -moz-transform: rotate(131deg);
+  -ms-transform: rotate(131deg);
+  -webkit-transform: rotate(131deg);
+  transform: rotate(131deg);
+}
+
+
+
+
+/* =============================================== /*
+/*                      shadows                    /*
+/* =============================================== */
+.shadows {
+  content: '';
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: -4px;
+  background: #CA98AB;
+  border-radius: 100%;
+  z-index: 0;
+}
+
+/* =============================================== /*
+/*                                                 /* 
+/*                     Responsive                  /*
+/*                                                 /*
+/* =============================================== */
+@media only screen and (max-height: 805px) {
+  #workspace .desk {
+    width: 724px;
+  }
+
+  
+  /* Table */
+  .table {
+    width: 639px;
+    height: 211px;
+    margin-left: 81px;
+  }
+  .table .right-tb {
+    width: 165px;
+    height: 191px;
+    padding: 20px 0 0 13px;
+  }
+  .table .right-tb span {
+    width: 144px;
+    height: 46px;
+    margin-top: 8px;
+  }
+  .table .right-tb span:before {
+    width: 144px;
+    height: 46px;
+  }
+  .table .right-tb span:after {
+    left: 51px;
+    top: 14px;
+    width: 47px;
+    height: 10px;
+  }
+  .table:before {
+    width: 24px;
+  }
+  .table:after {
+    height: 15px;
+  }
+
+  /* Chair */
+  .chair {
+    margin-left: -20px;
+    width: 119px;
+    height: 310px;
+  }
+  .chair:after {
+    height: 165px;
+    width: 119px;
+  }
+  .chair:before {
+    width: 8px;
+    height: 7px;
+    top: 165px;
+    left: 60px;
+  }
+  .chair ul {
+    width: 119px;
+    height: 15px;
+    top: 172px;
+  }
+  .chair ul:before {
+    width: 98px;
+    height: 8px;
+    top: 15px;
+  }
+  .chair ul:after {
+    width: 25px;
+    height: 4px;
+    top: 23px;
+    left: 51px;
+  }
+  .chair ul li:first-child {
+    left: 60px;
+    top: 31px;
+  }
+  .chair ul li:first-child:after {
+    top: 7px;
+    width: 10px;
+    height: 108px;
+  }
+  .chair ul li:nth-child(2), .chair ul li:nth-child(3) {
+    top: 62px;
+  }
+  .chair ul li:nth-child(2):after, .chair ul li:nth-child(3):after {
+    width: 6px;
+    height: 109px;
+  }
+  .chair ul li:nth-child(3) {
+    left: 83px;
+    top: 67px;
+    height: 93px;
+  }
+
+  /* Black Screen */
+  .bk-screen {
+    margin-right:75%;
+    width: 126px;
+    height: 168px;
+    right: 36px;
+    top: -209px;
+    border: 6px solid #525151;
+  }
+  .bk-screen:before {
+    width: 54px;
+    height: 11px;
+    bottom: -17px;
+    left: 39px;
+  }
+  .bk-screen:after {
+    width: 54px;
+    bottom: -28px;
+    right: 19px;
+    border-bottom: 11px solid #626262;
+  }
+  .bk-screen i {
+    width: 80px;
+    height: 7px;
+    bottom: -35px;
+    left: 27px;
+  }
+}
