@@ -4,8 +4,9 @@ import './card.css';
 function Card() {
     return (
         <div className='introCard'>
-            <div className='image'></div>
+            {/* <div className='image'></div> */}
             <div className='introduction'>
+              
             </div>
         </div>
     );
