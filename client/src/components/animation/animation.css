@@ -88,6 +88,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   z-index: 1;
   width: 18.7%;
   bottom: 0;
+  top: -40px;
   background: #e2aabe;
   height: 68px;
   border-top: 9px solid #ae758a;
@@ -97,6 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 100%;
   margin: auto;
   position: inherit;
+  /* top: 20px; */
 }
 
 
@@ -201,7 +203,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: #343441;
   border: 8px solid #525151;
   right: 45px;
-  top: -296px;
+  top: -170px;
   background: url(D:\portfolio_web\client\src\static\backgroundCode.jpg);
   background-size: 100%;
   -webkit-animation: slide 15s linear infinite;
@@ -240,7 +242,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /*
 /*
-/* =============================================== /*
+/* ============================================= /*
 /*                     Chair                       /*
 /* =============================================== */
 .chair {
@@ -395,11 +397,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     width: 639px;
     height: 211px;
     margin-left: 81px;
+    top: -200px;
   }
   .table .right-tb {
     width: 165px;
     height: 191px;
     padding: 20px 0 0 13px;
+    
   }
   .table .right-tb span {
     width: 144px;
@@ -428,6 +432,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-left: -20px;
     width: 119px;
     height: 310px;
+    top: -290px;
   }
   .chair:after {
     height: 165px;
@@ -482,26 +487,151 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     margin-right:75%;
     width: 126px;
     height: 168px;
-    right: 36px;
-    top: -209px;
+    right: 30px;
+    top: -210px;
     border: 6px solid #525151;
   }
   .bk-screen:before {
     width: 54px;
     height: 11px;
     bottom: -17px;
-    left: 39px;
+    left: 36px;
   }
   .bk-screen:after {
     width: 54px;
     bottom: -28px;
-    right: 19px;
+    right: 23px;
     border-bottom: 11px solid #626262;
   }
   .bk-screen i {
     width: 80px;
     height: 7px;
     bottom: -35px;
-    left: 27px;
+    left: 23px;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  #workspace .desk {
+    width: 724px;
+  }
+
+  
+  /* Table */
+  .table {
+    width: 639px;
+    height: 211px;
+    margin-left: 81px;
+    top: -200px;
+  }
+  .table .right-tb {
+    width: 165px;
+    height: 191px;
+    padding: 20px 0 0 13px;
+    
+  }
+  .table .right-tb span {
+    width: 144px;
+    height: 46px;
+    margin-top: 8px;
+  }
+  .table .right-tb span:before {
+    width: 144px;
+    height: 46px;
+  }
+  .table .right-tb span:after {
+    left: 51px;
+    top: 14px;
+    width: 47px;
+    height: 10px;
+  }
+  .table:before {
+    width: 24px;
+  }
+  .table:after {
+    height: 15px;
+  }
+
+  /* Chair */
+  .chair {
+    margin-left: -20px;
+    width: 119px;
+    height: 310px;
+    top: -290px;
+  }
+  .chair:after {
+    height: 165px;
+    width: 119px;
+  }
+  .chair:before {
+    width: 8px;
+    height: 7px;
+    top: 165px;
+    left: 60px;
+  }
+  .chair ul {
+    width: 119px;
+    height: 15px;
+    top: 172px;
+  }
+  .chair ul:before {
+    width: 98px;
+    height: 8px;
+    top: 15px;
+  }
+  .chair ul:after {
+    width: 25px;
+    height: 4px;
+    top: 23px;
+    left: 51px;
+  }
+  .chair ul li:first-child {
+    left: 60px;
+    top: 31px;
+  }
+  .chair ul li:first-child:after {
+    top: 7px;
+    width: 10px;
+    height: 108px;
+  }
+  .chair ul li:nth-child(2), .chair ul li:nth-child(3) {
+    top: 62px;
+  }
+  .chair ul li:nth-child(2):after, .chair ul li:nth-child(3):after {
+    width: 6px;
+    height: 109px;
+  }
+  .chair ul li:nth-child(3) {
+    left: 83px;
+    top: 67px;
+    height: 93px;
+  }
+
+  /* Black Screen */
+  .bk-screen {
+    margin-right:75%;
+    width: 100px;
+    height: 150px;
+    right: 36px;
+    top: -200px;
+    border: 6px solid #525151;
+  }
+  .bk-screen:before {
+    width: 46px;
+    height: 11px;
+    bottom: -17px;
+    left: 23px;
+  }
+  .bk-screen:after {
+    width: 46px;
+    bottom: -28px;
+    right: 18px;
+    border-bottom: 11px solid #626262;
+  }
+  .bk-screen i {
+    width: 71px;
+    height: 7px;
+    bottom: -35px;
+    left: 10px;
   }
 }
