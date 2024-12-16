@@ -11,12 +11,14 @@
     justify-content: center;
     align-items: flex-end;
     padding-right: 10px;
+    color: #FAFAFF;
 }
 
 .introCard:hover {
     background-color:#FAFAFF;
     border: 5px solid #3E829A;
     transform: scale(1);
+    color: #3E829A;
 }
 
 
@@ -36,7 +38,7 @@
     width: 70%;
     display: flex;
     align-items: flex-end;
-    
+
 }
 
 /* .image {
