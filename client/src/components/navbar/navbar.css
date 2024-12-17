@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+.navbar ul li {
+    margin: 10px;
+    color: #045174;
+}
