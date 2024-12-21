@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Molengo&family=Questrial&display=swap');
+
+body {
+    -webkit-animation-delay: 0.1s;
+            animation-delay:0.1s;
+    -webkit-animation-name: fontfix;
+            animation-name: fontfix;
+    -webkit-animation-duration: 0.1s;
+            animation-duration: 0.1s;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+}
+   
+@keyframes fontfix {
+from { opacity: 1; }
+to   { opacity: 1; }
+}
+
 .introCard {
     position: relative;
     width: 100%;
@@ -23,45 +43,107 @@
 
 
 #greetings {
-    font-size: 2em;
-}
-
-#Iam {
     font-size: 1em;
+    padding-top: 10px;
+    padding-right: 5px;
+    font-family: "Didact Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #introName {
     font-size: 4em;
+    padding-right: 5px;
+    margin-top: 7px;
+    line-height: 1;
+    vertical-align: text-top;
+    border-right: 2px solid #FAFAFF;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Rubik Doodle Shadow", serif;
+    font-weight: 400;
 }
 
 #introLine {
     width: 70%;
-    display: flex;
-    align-items: flex-end;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 5px;
+    font-family: "Didact Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-.wave {
+#wave {
+    margin-bottom: -0.4em;
+    line-height: 1;
+    vertical-align: text-top;
     -webkit-animation-name: wave-animation;
             animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
-    -webkit-animation-duration: 2.5s;
-            animation-duration: 2.5s;        /* Change to speed up or slow down */
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;        /* Change to speed up or slow down */
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;  /* Never stop waving :) */
     transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
     display: inline-block;
   }
   
-  @-webkit-keyframes wave-animation {
-      0% { transform: rotate( 0.0deg) }
-     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
-     20% { transform: rotate(-8.0deg) }
-     30% { transform: rotate(14.0deg) }
-     40% { transform: rotate(-4.0deg) }
-     50% { transform: rotate(10.0deg) }
-     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
-    100% { transform: rotate( 0.0deg) }
-  }
+
+  @keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
   
+
+.introCard:hover #introName {
+    border-right: 2px solid #3E829A;
+}
+.anim-typewriter {
+    font-family: "Vast Shadow", serif;
+    font-weight: 400;
+    font-style: normal;
+    animation: typewriter 1s steps(6) 1s 1 normal both,
+    blinkTextCursor 500ms steps(6) infinite normal;
+}
+
+.introCard:hover .anim-typewriter {
+    animation: typewriter 1s steps(6) 1s 1 normal both,
+    blinkTextCursorHover 500ms steps(6) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+          width: 0;
+    }
+    to {
+          width: 3em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+          border-right-color: #FAFAFF;
+    }
+    to {
+          border-right-color: transparent;
+    }
+}
+
+@keyframes blinkTextCursorHover {
+    from {
+          border-right-color: #3E829A;
+    }
+    to {
+          border-right-color: transparent;
+    }
+}
 /* .image {
     width: 50%;
     height: 95%;
